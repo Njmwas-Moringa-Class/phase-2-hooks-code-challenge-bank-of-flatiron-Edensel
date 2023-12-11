@@ -25,3 +25,11 @@ body {
   padding: 20px;
   color: white;
 }
+.delete-button {
+  background-color: red; /* Change this color to your desired danger color */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}

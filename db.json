@@ -83,6 +83,34 @@
       "description": "Venmo, Pay Roommate for Rent",
       "category": "Housing",
       "amount": -975
+    },
+    {
+      "date": "2023-12-07",
+      "description": "wqedefe",
+      "category": "effef",
+      "amount": "20",
+      "id": 15
+    },
+    {
+      "date": "2023-12-15",
+      "description": "Kenya",
+      "category": "Income",
+      "amount": "10.00",
+      "id": 16
+    },
+    {
+      "date": "2023-12-08",
+      "description": "Deno",
+      "category": "Yolo",
+      "amount": "9000",
+      "id": 18
+    },
+    {
+      "date": "2023-12-14",
+      "description": "Welcome to Sigma Group",
+      "category": "Software Engineering",
+      "amount": "2000000",
+      "id": 20
     }
   ]
 }

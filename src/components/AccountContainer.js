@@ -48,7 +48,19 @@ function AccountContainer() {
       .catch((error) => console.error("Error adding transaction:", error));
   };
 
-  
+  const handleDeleteTransaction = (id) => {
+    fetch(`http://localhost:8001/transactions/${id}`, {
+      method: "DELETE",
+    })
+      .then(() => {
+        const updatedTransactions = transactions.filter(
+          (transaction) => transaction.id !== id
+        );
+        setTransactions(updatedTransactions);
+        setFilteredTransactions(updatedTransactions);
+      })
+      .catch((error) => console.error("Error deleting transaction:", error));
+  };
 
   return (
     <div>
@@ -56,6 +68,7 @@ function AccountContainer() {
       <AddTransactionForm handleAddTransaction={handleAddTransaction} />
       <TransactionsList
         transactions={filteredTransactions}
+        deleteTransaction={handleDeleteTransaction}
       />
     </div>
   );
